@@ -3,9 +3,12 @@
 export default function Home() {
   return (
  <>
-    <h1 className={"heading"}>
-        Home
-    </h1>
+     <section className={"pink_container"}>
+         <h1 className={"heading"}>
+             Pitch Your Startup, <br/> Connect With
+         </h1>
+     </section>
+
  </>
   );
 }
