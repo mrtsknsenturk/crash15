@@ -13,6 +13,7 @@ export default async function Home({
     const params = { search: query || null };
 
     const session = await auth();
+    console.log(session?.id)
 
 
     const { data: posts } = await sanityFetch({ query: STARTUPS_QUERY, params });
@@ -44,7 +45,7 @@ export default async function Home({
                             <StartupCard key={post?._id} post={post} />
                         ))
                     ) : (
-                        <p className="no-results">No startups found</p>
+                        <p className="no-results">Startup Projesi Bulunamadi</p>
                     )}
                 </ul>
             </section>
